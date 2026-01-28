@@ -7,38 +7,80 @@
     <title>Página Principal</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-    <div>   
+    <header>   
         <div class="logo">
-            <img src="assets/images/logo.png" width="200"/>
-        </div>
-    </div>
-
-    <div class="bar"></div>
-
-    <div class="content">
-        <div class="sidebar">
-            <h2>Título</h2>
-            <ul>
-                <li><a href="#">Links</a></li>
-            </ul>
-        </div>
-
-        <div class="main">
+            <img src="assets/images/arq04-dio.png" width="80"/>
             
         </div>
+        <div>
+            <form action="/search" method="get">
+                <input type="search" name="q" placeholder="Digite sua pesquisa..." required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
 
-        <div class="anchors">
+    </header>
+
+    <nav class="bar"></nav>
+
+    <main class="content">
+        <aside class="sidebar">
+            <h2>Títulos</h2>
+            <ul>
+                <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:Sobre_a_Wikip%C3%A9dia">Sobre a Wikipédia</a></li>
+            </ul>
+        </aside>
+
+        <section class="main">
+            <h1 id="sobre" class="sobre" >Sobre a Wikipédia</h1>
+            <p>Wikipédia é uma enciclopédia online e colaborativa, gratuita e escrita por voluntários. É uma das maiores enciclopédias da história da humanidade.</p>  
+            <p>Fundada em 2001 por Jimmy Wales e Larry Sanger, a Wikipédia cresceu rapidamente, tornando-se uma fonte popular de informações em diversos idiomas. Qualquer pessoa com acesso à internet pode editar seus artigos, o que contribui para a diversidade e atualização constante do conteúdo.</p>
+            <p>A Wikipédia é mantida pela Wikimedia Foundation, uma organização sem fins lucrativos. Seu modelo colaborativo permite que especialistas e entusiastas compartilhem conhecimento, tornando-a uma ferramenta valiosa para estudantes, pesquisadores e o público em geral.</p>
+            <figure>
+                <img src="assets/images/arq01-dio.png" alt="Imagem de exemplo da Wikipédia" width="600">
+                <figcaption>Figura 1: Exemplo do projeto da Wikipédia</figcaption>
+            </figure>
+            <hr>
+            <h2 id="crescimento" class="crescimento" >Crescimento da Wikipédia</h2>
+            <p>Desde sua criação, a Wikipédia experimentou um crescimento exponencial. Em poucos anos, passou de um pequeno projeto para uma das maiores fontes de informação online. Atualmente, a Wikipédia possui milhões de artigos em centenas de idiomas, cobrindo uma vasta gama de tópicos.</p>
+            <p>O crescimento da Wikipédia pode ser atribuído à sua natureza colaborativa e ao acesso aberto. Voluntários de todo o mundo contribuem com artigos, edições e atualizações, garantindo que o conteúdo permaneça relevante e atualizado. Além disso, a popularidade da internet e o aumento do acesso à informação digital impulsionaram ainda mais o crescimento da plataforma.</p>
+            <p>Hoje, a Wikipédia é amplamente utilizada por estudantes, educadores e o público em geral como uma fonte confiável de informações. Seu impacto na disseminação do conhecimento é inegável, tornando-a uma ferramenta essencial na era digital.</p>
+            <figure>
+                <img src="assets/images/arq02-dio.png" alt="Gráfico de crescimento da Wikipédia" width="600">
+                <figcaption>Figura 2: Gráfico ilustrando o crescimento da Wikipédia ao longo dos anos</figcaption>
+            </figure>
+            <hr>
+            <h2 id="colaboradores" class="colaboradores">Colaboradores</h2>
+            <p>Os colaboradores da Wikipédia são indivíduos voluntários que dedicam seu tempo e conhecimento para criar, editar e manter os artigos da enciclopédia. Eles vêm de diversas origens, incluindo estudantes, profissionais, especialistas em várias áreas e entusiastas do conhecimento.</p>
+            <p>Esses colaboradores desempenham um papel crucial na qualidade e precisão do conteúdo da Wikipédia. Eles seguem diretrizes rigorosas para garantir que as informações sejam verificáveis, imparciais e bem referenciadas. A comunidade de colaboradores também participa de discussões e revisões para resolver disputas e melhorar os artigos existentes.</p>
+            <p>A diversidade dos colaboradores contribui para a riqueza do conteúdo da Wikipédia, permitindo que diferentes perspectivas e conhecimentos sejam representados. Essa colaboração global é um dos principais fatores que tornam a Wikipédia uma fonte confiável e abrangente de informações.</p>
+            <figure>
+                <img src="assets/images/arq03-dio.png" alt="Imagem ilustrando colaboradores da Wikipédia" width="600">
+                <figcaption>Figura 3: Colaboradores trabalhando juntos na Wikipédia</figcaption>
+            </figure>
+
+        </section>
+
+        <aside class="anchors">
             <h2>Neste Artigo</h2>
             <ul>
-                <li><a href="#">Âncoras</a></li>
+                <li><a href="#sobre">Sobre a Wikipédia</a></li>
+                <li><a href="#crescimento">Crescimento da Wikipédia</a></li>
+                <li><a href="#colaboradores">Colaboradores</a></li>
             </ul>
+        </aside>
+    </main>
+    <footer class="footer">
+        <div>
+            <h3>Políticas de privacidade</h3>
+            <p>Copyright © 2026 - Todos os direitos reservados</p>
+            <p><a href="mailto:teste@teste@gmail.com">teste@teste@gmail.com</a></p>
+            <p> +55 16 9 9999-9999</p>
         </div>
-    </div>
-
-    <div class="footer">
-
-    </div>
+    </footer>
 </body>
+
 </html>
